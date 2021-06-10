@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="robots" content="all">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="国民记忆是王者荣耀2020年的年度文创主题，在传承中创新，和所有玩家一起致过往，知此刻，铭今日。">
+  <meta name="Keywords" content="荣耀传承,王者荣耀,新文创,王者新皮肤,国民记忆,荣耀中国节,文创皮肤">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+  <!-- <link rel="stylesheet" href="css/swiper.css"> -->
+  <link rel="stylesheet" href="../css/inherit.css">
+  <style>
+    .showBox {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .showBox ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .showBox ul li {
+      float: left;
+      position: relative;
+      height: 166px;
+      width: 15%;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .showBox ul li:nth-child(3) {
+      width: 40%;
+    }
+
+    /* 这是css手风琴的核心，就是hover的使用
+        **首先是ul:hover li这个触发了经过ul但没有经过li的变化
+        **然后是ul li:hover这里是被经过li的变化，匹配css3动画效果，
+        和css3的一些对页面美化的效果，就可以做出一个很好看的手风琴，
+        如果使用纯js实现可能很麻烦。
+         */
+    .showBox ul:hover li {
+      width: 15%;
+      background-color: #000;
+    }
+
+    .showBox ul li:hover {
+      width: 40%;
+    }
+
+
+    .showBox ul li img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .showBox ul li span {
+      width: 22px;
+      position: absolute;
+      top: 0;
+      font-size: 10px;
+      right: 0;
+      height: 64px;
+      /* padding-top: 50px; */
+      color: #fff;
+    }
+
+
+    .showBox ul li:hover span.bg1 {
+      background-color: #bc9b6a;
+      color: #000;
+      font-weight: 700;
+      border-radius: 25%;
+    }
+
+    .showBox ul li:hover span.bg2 {
+      background-color: #bc9b6a;
+      color: #000;
+      border-radius: 25%;
+      font-weight: 700;
+
+    }
+
+    .showBox ul li:hover span.bg3 {
+      background-color: #bc9b6a;
+      color: #000;
+      border-radius: 25%;
+      font-weight: 700;
+
+    }
+
+    .showBox ul li:hover span.bg4 {
+      background-color: #bc9b6a;
+      color: #000;
+      border-radius: 25%;
+      font-weight: 700;
+
+    }
+
+    .showBox ul li:hover span.bg5 {
+      background-color: #bc9b6a;
+      color: #000;
+      border-radius: 25%;
+      font-weight: 700;
+
+    }
+  </style>
+  <title>国民记忆-王者荣耀官网-腾讯游戏</title>
+</head>
+
+<body>
+  <ul class="fixed-nav clearfix">
+    <li id="index" class="on"><a href="#">专题首页</a></li>
+    <li id="skin"><a href="#">国民记忆<br>系列皮肤</a></li>
+    <li id="acitivity"><a href="#">荣耀中国节<br>系列活动</a></li>
+  </ul>
+  <img src="../images/inherit/kv1.jpg" class="main-kv">
+  <div class="memory bg">
+    <img src="../images/inherit/tit1.png" class="tit">
+    <div class="ggBox" id="ggBox">
+      <ul class="adPicUl" style="width: 200%;">
+        <li style="width: 50%;">
+          <a href="#" title="王者数字皮肤">
+            <img src="../images/inherit//Chinaj.jpeg">
+          </a>
+        </li>
+      </ul>
+      <div><a>王者数字皮肤</a></div>
+    </div>
+    <!-- 大 -->
+    <div class="clearfix login-part">
+      <!-- 左 -->
+      <div class="memory-login">
+        <!-- 上 -->
+        <div id="ynlogin" class="not-login">
+          <img class="portrait" src="../images/inherit/icon-notlogin.png" alt="">
+          <div class="notlist">
+            <a href="#" class="qq">QQ登录</a>
+            <a href="#" class="wx">微信登录</a>
+            <!-- <a href="#">注销</a> -->
+            <p>登录后查看我的文创记忆</p>
+          </div>
+        </div>
+        <!-- 下 -->
+        <div
+          class="swiper-container memory-icon-list clearfix swiper-container-initialized swiper-container-horizontal swiper-container-multirow swiper-container-multirow-column swiper-container-ios"
+          id="badgeswiper">
+          <ul class="swiper-wrapper" style="width: 185px; transform: translate3d(0px, 0px, 0px);">
+            <li class="swiper-slide swiper-slide-active" id="qingming21" style="width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge1.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/badge1.png">
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-next" id="lixiaolong" style="margin-top: 0px; width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge6.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+            <li class="swiper-slide" id="zhongqiu" style="width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge5.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+            <li class="swiper-slide" id="qixi" style="margin-top: 0px; width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge4.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+            <li class="swiper-slide" id="dragon" style="width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge3.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+            <li class="swiper-slide" id="wslskin" style="margin-top: 0px; width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge2.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+            <li class="swiper-slide" id="kiteflying" style="width: 46.25px;">
+              <img class="pic-icon" src="../images/inherit/badge7.png">
+              <div class="icon">
+                <p class="get-icon">未领取</p>
+                <img src="../images/inherit/ico-question.png">
+              </div>
+            </li>
+          </ul>
+          <div class="pa bg swiper-button-next1 swiper-button-disabled" tabindex="0" role="button"
+            aria-label="Next slide" aria-disabled="true"></div>
+          <div class="pa bg swiper-button-prev1 swiper-button-disabled" tabindex="0" role="button"
+            aria-label="Previous slide" aria-disabled="true"></div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+      </div>
+      <!-- 右 -->
+      <div class="memory-month">
+        <img src="../images/inherit/下载.png" alt="">
+      </div>
+
+
+    </div>
+    <div class="news">
+      <p class="tn">最新快讯</p>
+      <ul id="list">
+        <li><a href="#"><i>03/29</i>荣耀中国节2021年系列皮肤揭秘</a></li>
+        <li><a href="#"><i>03/28</i>荣耀中国节2021全新启程</a></li>
+        <li><a href="#"><i>01/04</i>王者荣耀承包了一列地铁，带你探访那生生不息武术魂！</a></li>
+        <li><a href="#"><i>12/31</i>接下来的365天，小妲己陪你“每日一签·好运连年”！</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- xia -->
+  <div class="bg event">
+    <img src="../images/inherit/tit2.png" class="tit">
+    <div class="showBox">
+      <ul>
+        <li><span class="bg1">中国航天</span><img src="../images/inherit/event12.jpg" alt=""></li>
+        <li><span class="bg2">敦煌</span><img src="../images/inherit/event13.jpg" alt=""></li>
+        <li><span class="bg3">武术</span><img src="../images/inherit/event14.jpg" alt=""></li>
+        <li><span class="bg4">中华书局</span><img src="../images/inherit/event16.jpg" alt=""></li>
+        <li><span class="bg5">长城</span><img src="../images/inherit/event17.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="pa swiper2page">
+      <div class="swiper-button-prev2 bg" ontouchend="PTTSendClick('btn','prev2','上一页');" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <span class="swiper2pagination">2/17</span>
+      <div class="swiper-button-next2 bg" ontouchend="PTTSendClick('link','next2','下一页');" tabindex="0" role="button" aria-label="Next slide"></div>
+    </div>
+  </div>
+  
+  <div class="bg votebox">
+    <img src="../images/inherit/tit3.png" class="tit">
+    <div class="vote-main">
+      <div class="vote-after">
+        <h3 class="t">清明踏青时，你更喜欢哪种风筝？</h3>
+        <ul class="q-list">
+          <li><label><input type="radio" class="voteRadio" name="radio" value="1" checked=""><span>小型无挂件型</span></label>
+          </li>
+          <li><label><input type="radio" class="voteRadio" name="radio" value="2"><span>大型无挂件型</span></label></li>
+        </ul>
+        <a href="javascript:;" id="vote-submit" class="submit bg tn"
+          ontouchend="PTTSendClick('btn','tpbtn','立即投票')">立即投票</a>
+      </div>
+      <div class="vote-result" style="display:none">
+        <h3 class="t">清明踏青时，你更喜欢哪种风筝？</h3>
+        <ul class="an-list">
+          <li>
+            <p class="at">小型无挂件型</p>
+            <div class="bg fl">
+              <div class="progress" id="progress1"></div>
+            </div>
+            <span class="fl" id="voteNum1">100票</span>
+          </li>
+          <li>
+            <p class="at">大型无挂件型</p>
+            <div class="bg fl">
+              <div class="progress" id="progress2"></div>
+            </div>
+            <span class="fl" id="voteNum2">100票</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="swiper-container voteswiper swiper-container-initialized swiper-container-horizontal swiper-container-ios"
+      id="prizeswiper">
+      <div class="showBox">
+        <ul>
+          <li><span class="bg1">荣耀历史</span><img src="../images/inherit/event1.jpg" alt=""></li>
+          <li><span class="bg2">长城</span><img src="../images/inherit/event2.jpg" alt=""></li>
+          <li><span class="bg3">公益日</span><img src="../images/inherit/event3.jpg" alt=""></li>
+          <li><span class="bg4">王者历史课</span><img src="../images/inherit/event4.jpg" alt=""></li>
+          <li><span class="bg5">敦煌</span><img src="../images/inherit/event5.jpg" alt=""></li>
+        </ul>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+    <div class="swiper3page">
+      <div class="swiper-button-prev3 bg" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <span class="swiper3pagination bg">1/5</span>
+      <div class="swiper-button-next3 bg" tabindex="0" role="button" aria-label="Next slide"></div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div id="afooter">
+    <footer class="foot">
+      <p class="copyright_en">COPYRIGHT © 1998 - 2021 TENCENT.ALL RIGHTS RESERVED.</p>
+      <p class="copyright_zh">腾讯公司 版权所有</p>
+      <p class="copyright_public"><a target="_blank" rel="noopener" href="//www.qq.com/culture.shtml"
+          style="display:inline">粤网文[2020]3396-195号</a><span style="margin:0 2px;display:inline;">|</span><a
+          style="display:inline" target="_blank" rel="noopener" href="//game.qq.com/culture2.htm">（署）网出证（粤）字第054号</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

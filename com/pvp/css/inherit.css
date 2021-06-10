@@ -1,0 +1,567 @@
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+fieldset,
+img {
+  border: 0;
+}
+em,
+i,
+b {
+  font-style: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+li {
+  text-align: -webkit-match-parent;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+* {
+  outline: none;
+}
+.tn {
+  overflow: hidden;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tit {
+  width: 5.38rem;
+  height: 0.89rem;
+  display: block;
+  margin: 0 auto;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+body {
+  display: block;
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+body .fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 7.5rem;
+  background-color: #1a1a1a;
+  z-index: 9;
+}
+body .fixed-nav li {
+  float: left;
+  display: block;
+  width: 33.33%;
+  height: 1rem;
+}
+body .fixed-nav a {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  padding-top: 0.2rem;
+  font-size: 12px;
+  color: #aaa49b;
+  text-align: center;
+}
+body .fixed-nav li:first-child a {
+  padding-top: 0.35rem;
+}
+body .fixed-nav .on {
+  background: url(../images/inherit/bg-nav.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+body .fixed-nav .on a {
+  color: #c39b5e;
+}
+body .main-kv {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+}
+body .memory {
+  width: 6.64rem;
+  padding: 0.5rem 0.43rem;
+  position: relative;
+  background-image: url(../images/inherit/memory-bg.jpg);
+  height: 12.76rem;
+}
+body .memory .tit {
+  width: 5.38rem;
+  height: 0.89rem;
+  display: block;
+  margin: 0 auto;
+}
+body .memory .ggBox {
+  width: 6.64rem;
+  height: 3.26rem;
+  margin: 0.6rem auto 0;
+  position: relative;
+  overflow: hidden;
+}
+body .memory .ggBox .adPicUl {
+  width: 1000%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.1s linear;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  /*当前帧样式*/
+}
+body .memory .ggBox .adPicUl img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .memory .ggBox .adPicUl li {
+  float: left;
+  width: 14.3%;
+  height: 100%;
+}
+body .memory .ggBox .adPicUl a.on {
+  background: #ae986c;
+}
+body .memory .login-part {
+  margin-top: 0.3rem;
+}
+body .memory .login-part .memory-login {
+  float: left;
+  width: 3.9rem;
+  height: 4rem;
+  text-align: center;
+  background: url(../images/inherit/bg-login.jpg) no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+}
+body .memory .login-part .memory-login .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+body .memory .login-part .memory-login .not-login,
+body .memory .login-part .memory-login .login-area,
+body .memory .login-part .memory-login .login-ready {
+  font-size: 0.2rem;
+  height: 1rem;
+  line-height: 0.3rem;
+}
+body .memory .login-part .memory-login .not-login,
+body .memory .login-part .memory-login .login-area,
+body .memory .login-part .memory-login .nick-num {
+  display: flex;
+  justify-content: space-between;
+}
+body .memory .login-part .memory-login .not-login a {
+  font-size: 0.26rem;
+  color: #fff;
+}
+body .memory .login-part .memory-login .qq {
+  background-position: 20px 18px;
+}
+body .memory .login-part .memory-login .portrait {
+  display: block;
+  width: 0.5rem;
+  margin: 0 auto;
+  border-radius: 100%;
+  height: 0.5rem;
+  margin-top: 0.15rem;
+}
+body .memory .login-part .memory-login .notlist {
+  width: 3.2rem;
+  padding-top: 0.15rem;
+}
+body .memory .login-part .memory-login p:first-child {
+  font-size: 0.26rem;
+}
+body .memory .login-part .memory-login .memory-icon-list {
+  width: 3.7rem;
+  margin: 0 auto;
+  height: 3rem;
+}
+body .memory .login-part .memory-login .memory-icon-list .get-icon {
+  color: #808080;
+}
+body .memory .login-part .memory-login .memory-icon-list .swiper-wrapper {
+  flex-direction: initial;
+  display: block !important;
+}
+body .memory .login-part .memory-login .memory-icon-list li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0.1rem 0.01rem !important;
+  width: 0.9rem !important;
+  text-align: center;
+  height: 1rem;
+}
+body .memory .login-part .memory-login .memory-icon-list img {
+  display: block;
+  width: 0.65rem;
+  margin: 0 auto 0.1rem;
+}
+body .memory .login-part .memory-login .memory-icon-list p {
+  display: block;
+  width: 0.9rem;
+  height: 0.3rem;
+  font-size: 0.18rem;
+  line-height: 0.3rem;
+}
+body .memory .login-part .memory-login .memory-icon-list .icon img {
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  right: -0.06rem;
+  top: 0;
+}
+body .memory .login-part .memory-login .memory-icon-list .swiper-button-prev1 {
+  background-image: url(../images/inherit/prev1.png);
+  width: 0.72rem;
+  height: 0.29rem;
+  bottom: 0.1rem;
+  left: 1rem;
+  z-index: 3;
+}
+body .memory .login-part .memory-login .memory-icon-list .swiper-button-next1 {
+  background-image: url(../images/inherit/next1.png);
+  width: 0.72rem;
+  height: 0.29rem;
+  bottom: 0.1rem;
+  right: 1rem;
+  z-index: 3;
+}
+body .memory .login-part .memory-month {
+  float: right;
+  width: 2.64rem;
+  height: 4rem;
+}
+body .memory .login-part .memory-month img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .memory .bg {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body .memory .news {
+  width: 6.64rem;
+  height: 3.05rem;
+  margin-top: 0.4rem;
+  background: url(../images/inherit/bg-news.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+body .memory .news p {
+  width: 5.8rem;
+  font-size: 0.26rem;
+  padding: 0.15rem 0;
+  margin: 0 auto;
+}
+body .memory .news a {
+  display: block;
+  margin: 0 auto;
+  width: 5.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 0.55rem;
+  font-size: 0.2rem;
+  text-decoration: none;
+  color: #aaa49b;
+}
+body .memory .news li:last-child a {
+  border-bottom: none;
+}
+body .event {
+  padding-top: 0.6rem;
+  position: relative;
+  height: 6.5rem;
+  background-image: url(../images/inherit/event-bg.jpg);
+}
+body .event .tit {
+  width: 4.18rem;
+  height: 0.9rem;
+}
+body .event .swiper-container {
+  width: 7.5rem;
+  height: 3.32rem;
+  margin-top: 0.7rem;
+}
+body .event .swiper-slide {
+  color: #FFF;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+body .event .swiper2page {
+  bottom: 0.84rem;
+  width: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #c0a575;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+body .event .swiper-button-prev2 {
+  background-image: url(../images/inherit/prev2.png);
+  width: 0.76rem;
+  height: 0.29rem;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+body .event .swiper2pagination {
+  display: block;
+  width: 1.5rem;
+  height: 0.29rem;
+  line-height: 0.29rem;
+  font-size: 0.2rem;
+  letter-spacing: 0.04rem;
+}
+body .event .swiper-button-next2 {
+  background-image: url(../images/inherit/next2.png);
+  width: 0.76rem;
+  height: 0.29rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+body .votebox {
+  height: 11rem;
+  background-image: url(../images/inherit/vote-bg.jpg);
+  position: relative;
+}
+body .votebox .tit {
+  width: 3.79rem;
+  height: 0.9rem;
+}
+body .votebox .vote-main {
+  height: 4.24rem;
+  padding-top: 0.89rem;
+  margin: 0 auto;
+}
+body .votebox .vote-main .t {
+  font-size: 0.3rem;
+  color: #a48d65;
+  text-align: center;
+}
+body .votebox .vote-main .q-list {
+  color: #ababab;
+  font-size: 0.24rem;
+  padding-top: 0.3rem;
+  padding-left: 1.5rem;
+  height: 1.7rem;
+}
+body .votebox .vote-main .q-list li {
+  height: 0.9rem;
+}
+body .votebox .vote-main label {
+  height: 0.3rem;
+  cursor: pointer;
+}
+body .votebox .vote-main label span {
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  vertical-align: text-top;
+  height: 30px;
+}
+body .votebox .vote-main label input:checked + span:before {
+  background: url(../images/inherit/checked.png) no-repeat;
+  background-size: cover;
+}
+body .votebox .vote-main label span:before {
+  display: -webkit-box;
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background: url(../images/inherit/check.png) no-repeat;
+  background-size: cover;
+  width: 0.26rem;
+  height: 0.26rem;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  float: left;
+  margin-top: 0.06rem;
+  margin-right: 0.1rem;
+}
+body .votebox .vote-main input {
+  display: none;
+}
+body .votebox .vote-main .submit {
+  width: 2.17rem;
+  height: 0.57rem;
+  background-image: url(../images/inherit/tpbtn.png);
+  display: block;
+  margin: 0 auto;
+}
+body .votebox .voteswiper {
+  height: 3.2rem;
+}
+body .votebox .swiper3page {
+  width: 3.5rem;
+  margin: 0 auto;
+  color: #FFF;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  height: 0.33rem;
+}
+body .votebox .swiper-button-prev3 {
+  background-image: url(../images/inherit/prev3.png);
+  width: 0.33rem;
+  height: 0.13rem;
+  cursor: pointer;
+  margin-top: 0.1rem;
+}
+body .votebox .swiper-button-next3 {
+  background-image: url(../images/inherit/next3.png);
+  width: 0.33rem;
+  height: 0.13rem;
+  cursor: pointer;
+  margin-top: 0.1rem;
+}
+body .swiper3pagination {
+  display: block;
+  text-align: left;
+  font-size: 0.2rem;
+  color: #c0a575;
+  letter-spacing: 0.04rem;
+}
+body .bg {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body .pa {
+  position: absolute;
+}
+body #afooter {
+  background: #000;
+  padding: 0.2rem 0;
+}
+body #afooter .foot {
+  width: 100%;
+}
+body #afooter .foot p,
+body #afooter .foot a {
+  font-size: 0.18rem;
+  color: #666;
+  text-align: center;
+}

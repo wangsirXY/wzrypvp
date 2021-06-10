@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  color: #565656;
+}
+body {
+  background: #f0f0f0;
+}
+.shop {
+  width: 100%;
+  /* 搜索栏 */
+  /* banner */
+  /* 功能模块 */
+  /* 新品 */
+}
+.shop .search {
+  width: 100%;
+  background: #cd4848;
+  padding: 10px 10px;
+}
+.shop .search .search-box {
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.shop .search .search-box span.icon-sear {
+  float: left;
+  margin: 6px 10px 0;
+  width: 20px;
+  height: 20px;
+  background: url(../images/shop/search.png) no-repeat;
+  background-size: 20px;
+}
+.shop .search .search-box input {
+  width: 100%;
+  height: 30px;
+  color: #999;
+  font-size: 16px;
+  border: 0;
+  padding: 10px 0;
+}
+.shop .banner {
+  padding: 10px;
+}
+.shop .banner .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border: 0;
+  background: #c8cad2;
+}
+.shop .banner .carousel-indicators li.active {
+  background: #fa4e56;
+}
+.shop .banner .carousel-inner .item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.shop .fun ul {
+  display: flex;
+}
+.shop .fun ul li {
+  width: 25%;
+  text-align: center;
+  font-size: 13px;
+}
+.shop .fun ul li img {
+  display: block;
+  width: 50px;
+  margin: 5px auto;
+}
+.shop .new-shop {
+  display: flex;
+  padding: 0 18px;
+  margin-top: 25px;
+}
+.shop .new-shop .m-s-i {
+  width: 50%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.shop .new-shop .m-s-i:nth-child(odd) {
+  padding-right: 3px;
+}
+.shop .new-shop .m-s-i:nth-child(even) {
+  padding-left: 3px;
+}
+/* 广告 */
+.advertising {
+  width: 100%;
+  margin-top: 10px;
+}
+/* 专场 */
+.special {
+  margin-top: 15px;
+  padding: 0 20px;
+  /* title */
+  /* list */
+}
+.special a.title {
+  display: block;
+  height: 70px;
+  position: relative;
+}
+.special a.title span {
+  width: 30px;
+  height: 30px;
+  background: url(../images/shop/index-more.png) no-repeat;
+  background-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+.special ul.spe-list {
+  display: flex;
+  padding: 0 15px;
+}
+.special ul.spe-list li {
+  width: 33.3%;
+  padding-bottom: 30px;
+}
+.special ul.spe-list li p {
+  padding: 7.5px 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.special ul.spe-list li em {
+  color: #f04831;
+  font-size: 16px;
+  font-weight: 700;
+}
+.special ul.spe-list li em i {
+  color: #f04831;
+  font-size: 12px;
+}
+.special ul.spe-list li del {
+  color: #cfcfcf;
+}
+.summer .special-box {
+  background: url(../images/shop/20210516144430_198547.png) no-repeat;
+  background-size: 100%;
+}
+.three .special-box {
+  background: url(../images/shop/20210516144912_505868.png) no-repeat;
+  background-size: 100%;
+}
+.shop-content {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.shop-content h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.shop-content h4 strong {
+  color: #323232;
+}
+.wz-dp {
+  margin-bottom: 20px;
+}
+.wz-dp ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wz-dp ul li {
+  width: 33.3%;
+  padding: 2.5px;
+}
+.wz-hw ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wz-hw ul li {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.wz-hw ul li div {
+  background-color: #fff;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.wz-hw ul li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  padding-left: 10px;
+  font-size: 12px;
+  margin: 0;
+}
+.wz-hw ul li em {
+  padding-left: 10px;
+  color: #f04831;
+  font-weight: 700;
+  font-size: 16px;
+}
+.wz-hw ul li em i {
+  color: #f04831;
+  font-size: 12px;
+}
+.wz-hw ul li:nth-child(odd) {
+  padding-right: 4px;
+}
+.wz-hw ul li:nth-child(even) {
+  padding-left: 4px;
+}
+/* footer */
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.footer ul {
+  height: 55px;
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-end;
+}
+.footer ul li {
+  width: 20%;
+  text-align: center;
+}
+.footer ul li img {
+  width: 28px;
+}
+.footer ul li p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+.footer ul li.active img {
+  width: 45px;
+}

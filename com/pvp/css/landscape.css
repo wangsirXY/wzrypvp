@@ -1,0 +1,79 @@
+/* 竖屏模式 */
+@media (orientation: portrait) {
+  header {
+    display: block;
+  }
+  .landscape {
+    display: none;
+  }
+}
+/* 横屏模式 */
+@media (orientation: landscape) {
+  body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: 9999;
+  }
+  body .index,
+  body .message,
+  body .story,
+  body .shop,
+  body .test,
+  body .new,
+  body .inherit,
+  body .campsite,
+  body .weCate,
+  body .edition,
+  body .play,
+  body .ip,
+  body .creativity {
+    display: none;
+  }
+  body .landscape {
+    display: block;
+  }
+  body .landscape .landscape-box {
+    width: 154px;
+    height: 216px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-position: -514px -405px;
+    background-size: 13.75rem;
+    animation: landscapeAll 2.5s ease-in-out infinite;
+    /* 旋转动画 */
+  }
+  @keyframes landscapeAll {
+    0% {
+      transform: rotateZ(-90deg);
+    }
+    20% {
+      transform: rotateZ(0deg);
+    }
+    60% {
+      transform: rotateZ(0deg);
+    }
+    80% {
+      transform: rotateZ(-90deg);
+    }
+    100% {
+      transform: rotateZ(-90deg);
+    }
+  }
+  body .landscape p {
+    color: #a39772;
+    font-size: 20px;
+    text-align: center;
+  }
+  body .landscape p em {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 2px solid #a39772;
+    border-radius: 50%;
+  }
+}

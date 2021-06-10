@@ -1,0 +1,380 @@
+html {
+  font-size: 50px;
+}
+html .index {
+  background-color: #f1f1f1;
+}
+/* icon 公共类 */
+.logo-img {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url(../images/icon.png) no-repeat;
+  background-size: 7.5rem;
+}
+/* 更多按钮 */
+a.icon-more {
+  width: 35px;
+  height: 20px;
+  background: url(../images/icon.png) -170px -262px no-repeat;
+  background-size: 8rem;
+}
+/* 盒子 - 标题公共样式 */
+.com-box {
+  margin-top: 0.313rem;
+  padding: 0 0.313rem;
+  background-color: #fff;
+  /* 分类列表 */
+}
+.com-box .t-common {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d4d9de;
+}
+.com-box .t-common h3 {
+  float: left;
+  color: #212222;
+  font-size: 16px;
+  line-height: 24px;
+}
+.com-box ul.common-list {
+  margin-top: 0.313rem;
+  display: flex;
+  text-align: center;
+}
+.com-box ul.common-list li {
+  width: 20%;
+  font-size: 14px;
+}
+.com-box ul.common-list li a.active {
+  padding: 1px 0;
+  color: #db9e3f;
+  border-bottom: 2px solid #db9e3f;
+}
+/* 菜单栏 */
+.index-menu ul {
+  margin: 0;
+  background: #db9e3f;
+  height: 0.84rem;
+  width: 100%;
+}
+.index-menu ul li {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  /* 点击效果 */
+}
+.index-menu ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 1px;
+}
+.index-menu ul li a::before {
+  content: "";
+  display: block;
+  padding-top: 8px;
+}
+.index-menu ul li a.active {
+  border-bottom: 3px solid #fff;
+}
+/* banner */
+.banner {
+  width: 100%;
+}
+.banner ol.carousel-indicators {
+  width: auto;
+  margin: 10px 0 0 130px;
+}
+.banner ol.carousel-indicators li {
+  width: 9px;
+  height: 9px;
+  border-radius: 30%;
+}
+/* 功能 */
+.fun {
+  margin-top: 0.313rem;
+  background-color: #fff;
+  /* 展开按钮 */
+}
+.fun ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70px;
+  padding-top: 0.2rem;
+  overflow: hidden;
+}
+.fun ul li {
+  position: relative;
+  width: 25%;
+  margin: 0.1rem 0;
+  text-align: center;
+}
+.fun ul li::before {
+  content: "";
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0 auto;
+  background: url(../images/icon.png) no-repeat;
+  background-size: 7.5rem;
+}
+.fun ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d4d9de;
+}
+.fun ul li:nth-child(4n)::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+.fun ul li a {
+  color: #808080;
+}
+.fun ul li:nth-child(1)::before {
+  background-position: -218px -61px;
+}
+.fun ul li:nth-child(2)::before {
+  background-position: -313px -61px;
+}
+.fun ul li:nth-child(3)::before {
+  background-position: -123px 0px;
+}
+.fun ul li:nth-child(4)::before {
+  background-position: -29px -61px;
+}
+.fun ul li:nth-child(5)::before {
+  background-position: -312px 0px;
+}
+.fun ul li:nth-child(6)::before {
+  background-position: -123px -61px;
+}
+.fun ul li:nth-child(7)::before {
+  background-position: -217px 0px;
+}
+.fun ul li:nth-child(8)::before {
+  background-position: 5px -412px;
+}
+.fun ul li:nth-child(9)::before {
+  background: url(../images/home/icon-bb.png) 4px 4px no-repeat;
+  background-size: 25px;
+}
+.fun ul li:nth-child(10)::before {
+  background: url(../images/home/icon-dj.png) 2px 8px no-repeat;
+  background-size: 30px;
+}
+.fun ul li:nth-child(11)::before {
+  background: url(../images/home/icon-ip.png) 1px 2px no-repeat;
+  background-size: 30px;
+}
+.fun ul li:nth-child(12)::before {
+  background: url(../images/home/icon-cy.png) 2px 2px no-repeat;
+  background-size: 30px;
+}
+.fun .btn-unfold {
+  text-align: center;
+  overflow: hidden;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 3px 0;
+}
+.fun .btn-unfold .icon-unfold {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url(../images/icon.png) -167px -274px no-repeat;
+  background-size: 9rem;
+  transform: rotateZ(180deg);
+}
+/* 新闻资讯 */
+.message {
+  /* 列表信息 */
+}
+.message span.icon-news {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon.png) 0 -5.55rem no-repeat;
+  background-size: 9.5rem;
+}
+.message .message-item {
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+  margin-top: 0.313rem;
+  position: relative;
+}
+.message .message-item ul {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s;
+}
+.message .message-item ul li {
+  width: 100%;
+  padding: 3px 0;
+}
+.message .message-item ul li a {
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message .message-item ul li a .message-tag {
+  width: 10%;
+  color: #f09a37;
+  padding: 0.02rem 0.04rem;
+  margin-right: 0.125rem;
+  border: 1px solid #f09a37;
+  border-radius: 0.05rem;
+  text-align: center;
+}
+.message .message-item ul li a .message-txt {
+  width: 75%;
+  height: 100%;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.message .message-item ul li a .message-date {
+  width: 15%;
+  text-align: right;
+  color: #777;
+}
+.message .message-item ul li a.news .message-tag {
+  color: #1e96ab;
+  border: 1px solid #1e96ab;
+}
+.message .message-item ul li a.notice .message-tag {
+  color: #ff3636;
+  border: 1px solid #ff3636;
+}
+.message .message-item ul li a.match .message-tag {
+  color: #4d9cff;
+  border: 1px solid #4d9cff;
+}
+/* 英雄列表 */
+.hero {
+  overflow: hidden;
+}
+.hero span.icon-hero {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon.png) -4.25rem -6.7rem no-repeat;
+  background-size: 9.5rem;
+}
+.hero .hero-list {
+  margin-top: 15px;
+}
+.hero .hero-wrap {
+  overflow: hidden;
+}
+.hero .hero-item {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px 0;
+}
+.hero .hero-item ul li {
+  float: left;
+  padding: 8px;
+  width: 20%;
+  text-align: center;
+  animation: opacity 0.7s;
+}
+.hero .hero-item ul li a {
+  display: block;
+}
+.hero .hero-item ul li a h3 {
+  margin-top: 5px;
+  font-size: 0.15rem;
+  font-weight: 400;
+}
+/* 精彩视频 */
+.greatVideo {
+  overflow: hidden;
+  width: 100%;
+}
+.greatVideo span.icon-video {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon.png) 0 -6.23rem no-repeat;
+  background-size: 9.5rem;
+}
+.greatVideo .greatVideo-list li {
+  margin-right: 20px;
+}
+.greatVideo .greatVideo-item {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.greatVideo .greatVideo-item .item-box {
+  width: 50%;
+  float: left;
+  animation: opacity 0.5s;
+}
+.greatVideo .greatVideo-item .item-box img {
+  height: 93.86px;
+}
+.greatVideo .greatVideo-item .item-box:nth-child(odd) {
+  padding-right: 5px;
+}
+.greatVideo .greatVideo-item .item-box:nth-child(even) {
+  padding-left: 5px;
+}
+.greatVideo .greatVideo-item p {
+  height: 31px;
+  line-height: 16px;
+  color: #222;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.greatVideo .greatVideo-item .v-infor {
+  display: flex;
+  justify-content: space-between;
+}
+.greatVideo .greatVideo-item .v-infor i.play {
+  overflow: hidden;
+  font-size: 12px;
+}
+.greatVideo .greatVideo-item .v-infor i.play::before {
+  content: "";
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon.png) -2.35rem -4.8rem no-repeat;
+  background-size: 7.8rem;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

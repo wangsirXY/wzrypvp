@@ -1,12 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1">
+    <meta name="keywords" content="王者荣耀,王者荣耀官网,王者荣耀下载,王者荣耀直播">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>王者荣耀官网-腾讯游戏</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery Js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- axios Js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <!-- common CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- common-top CSS -->
+    <link rel="stylesheet" href="./css/common-top.css">
+    <!-- index CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- landscape CSS -->
+    <link rel="stylesheet" href="./css/landscape.css">
 </head>
+
 <body>
+    <div class="index">
+        <!-- 共用板块：头部 common.js - common-top.css -->
+        <header>
+            <div class="index-top">
+                <div class="logo-cont">
+                    <a class="logo-img" href="/index.html"></a>
+                    <div class="logo-title">
+                        <h1>王者荣耀</h1>
+                        <p>团队成就更多</p>
+                    </div>
+                </div>
+                <div class="download">
+                    <a class="logo-img" href="#"></a>
+                </div>
+            </div>
+            <!-- 共用板块：头部-下载跳转页面 -->
+            <div class="await">
+                <div class="tips">
+                    <p>即将启动</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 菜单栏 -->
+        <div class="index-menu">
+            <ul>
+                <li>
+                    <a href="javscript:void(0);" class="active">首页</a>
+                </li>
+                <li>
+                    <a href="javscript:void(0);">攻略中心</a>
+                </li>
+                <li>
+                    <a href="javscript:void(0);">赛事中心</a>
+                </li>
+                <li>
+                    <a href="javscript:void(0);">IP新游</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 共用板块：轮播图 BootStrap.css - BootStrap.js - jQuery.js -->
+        <div class="banner">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- <div class="item active">
+                        <img src="./upload/home/banner1.jpg" alt="轮播图">
+                    </div> -->
+                </div>
+            </div>
+        </div> 
+
+        <!-- 功能板块：默认链接erroe.html，完成更改链接地址 -->
+        <div class="fun">
+            <ul>
+                <li>
+                    <a href="./inside/message.html">
+                        <i></i>
+                        <span>爆料站</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/story.html">
+                        <i></i>
+                        <span>故事会</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/shop.html">
+                        <i></i>
+                        <span>周边商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/test.html">
+                        <i></i>
+                        <span>体验服</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/new.html">
+                        <i></i>
+                        <span>新人专区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/inherit.html">
+                        <i></i>
+                        <span>荣耀·传承</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/campsite.html" target="_blank">
+                        <i></i>
+                        <span>王者营地</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/weCate.html">
+                        <i></i>
+                        <span>公众号</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/edition.html">
+                        <i></i>
+                        <span>版本介绍</span>
+                    </a>
+                </li>
+                <li>
+                    <!-- <a href="./inside/play.html"> -->
+                        <a href="error.html">
+                        <i></i>
+                        <span>对局环境</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/ip.html">
+                        <i></i>
+                        <span>IP共创计划</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./inside/creativity.html">
+                        <i></i>
+                        <span>创意互动营</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 展开 -->
+            <div class="btn-unfold">
+                <span class="icon-unfold"></span>
+                <span class="name-unfold">展开</span>
+            </div>
+        </div>
+
+        <!-- 新闻资讯 -->
+        <div class="com-box message">
+            <!-- 标题 -->
+            <div class="t-common">
+                <div>
+                    <span class="icon-news"></span>
+                    <h3>新闻资讯</h3>
+                </div>
+                <a href="error.html" class="icon-more"></a>
+            </div>
+            <!-- 分类列表 -->
+            <ul class="common-list message-list">
+                <!-- <li><a href="javascript:void(0);" class="active">热门</a></li>-->
+            </ul>
+            <!-- 列表信息 -->
+            <div class="message-item">
+                <!-- ... -->
+            </div>
+        </div>
+
+        <!-- 英雄列表 -->
+        <div class="com-box hero">
+            <div class="t-common">
+                <div>
+                    <span class="icon-hero"></span>
+                    <h3>英雄列表</h3>
+                </div>
+                <a href="error.html" class="icon-more"></a>
+            </div>
+            <!-- 最新英雄主图 -->
+            <div class="hero-banner">
+                <img src="./images/home/819841077459195.jpg" alt="">
+            </div>
+
+            <!-- 英雄列表分类 -->
+            <ul class="common-list hero-list"></ul>
+
+            <!-- 英雄列表 - 英雄 -->
+            <div class="hero-item"></div>
+        </div>
+
+        <!-- 精彩视频 -->
+        <div class="com-box greatVideo">
+            <div class="t-common">
+                <div>
+                    <span class="icon-video"></span>
+                    <h3>精彩视频</h3>
+                </div>
+                <a href="error.html" class="icon-more"></a>
+            </div>
+
+            <!-- 视频列表 -->
+            <ul class="common-list greatVideo-list">
+                <li><a href="javascript:void(0);" data-index="0" class="active">精彩栏目</a></li>
+                <li><a href="javascript:void(0);" data-index="1" >英雄攻略</a></li>
+                <li><a href="javascript:void(0);" data-index="2" >赛事精品</a></li>
+            </ul>
+            <!-- 列表信息 -->
+            <div class="greatVideo-item">
+                <!-- <div class="item-box">
+                    <img src="./images/home/17.png" alt="">
+                    <p>【整活吧小阿金】01：澜CG配音猛男版，BLUE坑惨澜朋友</p>
+                    <div class="v-infor">
+                        <i class="play">1515156</i>
+                        <em class="date">12-1</em>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
     
+    <!-- 共用版块：横屏模式 css/landscape.css -->
+    <div class="landscape">
+        <div class="landscape-box logo-img">
+            <i></i>
+        </div>
+        <p>
+            <em>!</em>
+            <span>为了更好的体验，请将手机/平板竖过来</span>
+        </p>
+    </div>
+
+    <!-- index Js -->
+    <script src="./js/index.js"></script>
+    <!-- 公共部分效果 Js -->
+    <script src="./js/common.js"></script>
 </body>
 </html>

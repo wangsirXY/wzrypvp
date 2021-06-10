@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    background: #f1f1f1;
+    overflow-x: hidden;
+    min-width: 320px;
+    max-width: 640px;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    font-size: 1rem;
+    color: #000;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  html {
+    font-size: 14px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+  i {
+    font-style: normal;
+  }
+  .rc_nav {
+    width: 100%;
+    height: 2.291667rem;
+    background-color: #fff;
+  }
+  .rc_nav ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+  }
+  .rc_nav ul li {
+    height: 2.291667rem;
+    line-height: 2.291667rem;
+    width: 30.125%;
+  }
+  .rc_nav ul li:nth-child(1) {
+    width: 9.5%;
+    height: 2.291667rem;
+    background-image: url(../images/new/backBg.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 50%;
+  }
+  .rc_nav ul li:nth-child(2) {
+    background-image: url(../images/new/go_icon_02.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    text-shadow: 0 0 2px #fff;
+  }
+  .rc_nav ul li:nth-child(2) a {
+    color: #fff;
+  }
+  .rc_nav ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8333rem;
+    color: #595757;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    box-sizing: border-box;
+  }
+  .pr-f {
+    position: relative;
+    top: 2.1667rem;
+    width: 25.83333rem;
+    margin: 0 auto;
+  }
+  .pr-f .go-content {
+    width: 100%;
+    position: relative;
+  }
+  .pr-f .go-content h2 {
+    color: #595757;
+    font-size: 0.916667rem;
+    padding-left: 4.5%;
+    margin-bottom: 0.833rem;
+    background: url(../images/new/go_icon_01.png) left center no-repeat;
+    background-size: 3.8%;
+    font-weight: normal;
+  }
+  .pr-f .go-content .sp-content {
+    width: 93.829%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
+    padding: 0.9rem 3.171%;
+    background: #fff;
+  }
+  .pr-f .go-content .sp-content img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+  .pr-f .go-content .sp-content .go-text {
+    width: 100%;
+  }
+  .pr-f .go-content .sp-content .go-text h3 {
+    color: #464646;
+    font-size: 1.25rem;
+    margin: 1.16667rem 0;
+  }
+  .pr-f .go-content .sp-content .go-text p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .pr-s {
+    position: relative;
+    top: 4.3334rem;
+    width: 25.83333rem;
+    margin: 0 auto;
+  }
+  .pr-s .ps {
+    width: 100%;
+    position: relative;
+  }
+  .pr-s .ps h2 {
+    color: #595757;
+    font-size: 0.916667rem;
+    padding-left: 4.5%;
+    margin-bottom: 0.833rem;
+    background: url(../images/new/go_icon_04.png) left center no-repeat;
+    background-size: 3.8%;
+    font-weight: normal;
+  }
+  .pr-s .ps .ps-boxcontent {
+    width: 93.829%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
+    padding: 0.9rem 3.171%;
+    background: #fff;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb {
+    width: 90.66%;
+    height: 1.667rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1.20833rem;
+    margin-top: 2rem;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb i {
+    position: absolute;
+    width: 98%;
+    height: 0.1667rem;
+    border: 1px solid #d7d7d7;
+    background: #eaeaea;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li {
+    float: left;
+    width: 1.667rem;
+    height: 1.667rem;
+    position: relative;
+    z-index: 3;
+    margin-right: 16%;
+    transition: all 1s ease;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li span i em {
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: white;
+    left: 41%;
+    bottom: -0.25rem;
+    border-left: 1px solid #9fa0a0;
+    border-bottom: 1px solid #9fa0a0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li span {
+    position: relative;
+    height: 1.667rem;
+    width: 100%;
+    display: block;
+    background: url(../images/new/go_icon_06.png) no-repeat center;
+    background-size: contain;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li span i {
+    position: absolute;
+    width: 4rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    top: -78%;
+    left: -57%;
+    font-size: 1rem;
+    color: #9fa0a0;
+    border: 1px solid #9fa0a0;
+    border-radius: 3px;
+    padding: 0 0.18rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li span i em {
+    background: #2784e0;
+    bottom: -0.2rem;
+    border: 0;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: white;
+    left: 41%;
+    bottom: -0.25rem;
+    border-left: 1px solid #9fa0a0;
+    border-bottom: 1px solid #9fa0a0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li:first-child {
+    margin-right: 13%;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li:first-child span i {
+    left: -67%;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul li:last-child {
+    margin-right: 0;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul .current span {
+    background: url(../images/new/go_icon_05.png) no-repeat center;
+    background-size: contain;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul .current span i {
+    border: 1px solid #2784e0;
+    background: #2784e0;
+    color: #fff;
+  }
+  .pr-s .ps .ps-boxcontent .go-tb ul .current span i em {
+    background: #2784e0;
+    bottom: -0.2rem;
+    border: 0;
+  }
+  .pr-s .ps .ps-boxcontent .go-boxcontent .go_aText h3 {
+    color: #464646;
+    font-size: 1.25rem;
+    margin: 1.16667rem 0;
+  }
+  .pr-s .ps .ps-boxcontent .go-boxcontent .go_aText p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .pr-s .ps .ps-boxcontent .go-boxcontent img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+  .pr-s .ps .ps-boxcontent .go-boxcontent .gameCon {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+  /* 顶部 */
+  .warp {
+    position: static;
+    width: 100%;
+    background: #f1f1f1;
+    overflow-x: hidden;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+}
+  .home-top {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88;
+    width: 100%;
+    height: 4.85em;
+    background: url(../images/new/topNav.png) center top no-repeat;
+}
+
+  .home-top {
+    background: url(../images/new/hd.jpg) no-repeat 50% 0;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 100%;
+    background-size: 100% 45px;
+    font-size: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo_cont {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  top: 8px;
+  left: 17px;
+  padding-left: 40px;
+}
+.home-top .download {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  top: 9px;
+  right: 16px;
+}
+.logo_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/new/index.png) 0 -308px no-repeat;
+  background-size: 375px;
+}
+.logo_title h1 {
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+.logo_title p {
+  font-size: 8px;
+  color: #666;
+}
+.home-top .download a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/new/index.png);
+  background-size: 375px;
+  background-position: -59px -309px;
+}
+.home_bottom {
+  background: #db9e3f;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  top: 45px;
+  background-size: 100% auto;
+  font-size: 0;
+  z-index: 10;
+}
+
+.home_bottom ul li {
+  width: 25%;
+  height: 3rem;
+  float: left;
+  line-height: 3rem;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.home_bottom ul {
+  height: 100%;
+}
+#main-nav a {
+  color: #fff;
+}
+.home_bottom a {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.92857rem;
+  text-indent: 0;
+}

@@ -1,0 +1,547 @@
+/* *{border: 1px solid #f00;} */
+body,html{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.story{
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    height:100%;
+    background: url(../images/story/bg_p.jpg) no-repeat;
+    background-size: cover;
+}
+.index{
+    position: absolute;
+    width: 100%;
+    padding: .2rem .2rem ;
+    box-sizing: border-box;
+}
+.index .banner{
+    width: 100%;
+    height: 100%;
+}
+.index .banner img{
+    width: 100%;
+    height: 100%;
+}
+/* .index .banner li{ 
+    width: .131579rem;
+    height: .131579rem;
+} */
+ .index .list{
+    height: 6.4rem;
+    color: #dee4f8;
+    margin-top: .2rem;
+    background: -webkit-linear-gradient(top,rgba(49,98,161,0),#3162a1);
+    border: 1px solid #2f5988;
+}
+.index .list h3{
+    width: 3.947368rem;
+    color: #f5dc9f;
+    font-size: .263158rem;
+    font-weight: 100;
+    line-height: .657895rem;
+    /* padding-left: .721053rem; */
+    margin-left: .2rem;
+    border-bottom:.006579rem solid #396da8 ;
+}
+.index .list ul{
+    height: 5.62rem;
+    padding: 0 .02rem .8rem .2rem;
+    overflow-y: auto; 
+    box-sizing: border-box;
+}
+.index .list img{
+    float: left;
+    width: 1.46rem;
+    height: .93rem;
+}
+.index .list ul li{
+    height:1.315789rem;
+    font-size: .24px;
+    padding:.197368rem 0rem;
+    border-bottom:.006579rem solid #396da8;
+    overflow: hidden;
+    margin-right: .657895rem;
+}
+.index .list .list-left{
+    float: left;
+    margin-left: .394737rem;
+    line-height: .394737rem;
+}
+.index .list .list-left span{
+    display: inline-block;
+    text-align: center;
+    width: .526316rem;
+    height: .263158rem;
+    line-height: .263158rem;
+}
+.index .list em{
+    display: inline-block;
+    margin-left: .131579rem;
+    width: .45rem;
+    height: .18rem;
+    background: url(../images/story/icon-new.png);
+    background-size: 100%;
+}
+.gree{
+    color:#819a50;
+    border: 1px solid #819a50;
+    border-radius: .1rem;
+}
+.blue{
+    color: #31aaf0;
+    border:1px solid #31aaf0;
+    border-radius: .1rem;
+}
+.purple{
+    color: #6268be;
+    border:1px solid #6268be;
+    border-radius: .1rem;
+}
+.flex{
+    display: flex;
+}
+.body .body-body{
+    margin-top: .197368rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.body .body-body img{
+    width: 48%;
+}
+.body .body-footer {
+    margin-top: .197368rem;
+}
+.body .body-footer img{
+    width: 100%;
+}
+.body .body-footer-top{
+    margin-top:1.052632rem;
+}
+.body .body-footer-top .top{
+    width: 2.28rem;
+    height: .6rem;
+    background: url(../images/story/index9.png) no-repeat;
+    background-size: 2.28rem auto;
+    margin: .263158rem auto;
+    margin-bottom: .657895rem;
+}
+.body .body-footer-top .foor img{
+    width: 100%;
+}
+.body .body-footer-top .foor h5{
+    font-size: .24rem;
+    padding: .131579rem 0;
+    width: 1.97rem;
+    margin: .263158rem auto;
+    color: #669fdd;
+    text-align: center;
+    background:url(../images/story/home/warry.png) no-repeat;
+    background-size: 100%;
+}
+.body .body-footer-body{
+    margin-top:1.052632rem;
+}
+.body .body-footer-body .top{
+    width: 2.28rem;
+    height: .6rem;
+    background: url(../images/story/index9.png) no-repeat;
+    background-size: 2.28rem auto;
+    margin: .263158rem auto;
+    background-position: 0 -.6rem;
+    margin-bottom: .657895rem;
+}
+
+.body .body-footer-body .foor img{
+    width: 100%;
+}
+.body .body-footer-body .foor h5{
+    font-size: .24rem;
+    padding: .131579rem 0;
+    width: 1.97rem;
+    margin: .263158rem auto;
+    color: #669fdd;
+    text-align: center;
+    background:url(../images/story/home/warry.png) no-repeat;
+    background-size: 100%;
+}
+.body .body-footer-foot{
+    margin-top:1.052632rem;
+}
+.body .body-footer-foot .top {
+    width: 2.28rem;
+    height: .6rem;
+    background: url(../images/story/index9.png) no-repeat;
+    background-size: 2.28rem auto;
+    margin: .263158rem auto;
+    margin-bottom: .657895rem;
+    background-position: 0 -1.2rem;
+}
+.body .body-footer-foot .body{
+    margin-top: .197368rem;
+    justify-content: space-between;
+}
+.body .body-footer-foot .body div{
+    position: relative;
+    width: 48%;
+}
+.body .body-footer-foot .body .movr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(17,20,26,.4);
+    top:0px;
+}
+.body .body-footer-foot .body .lfet p{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: .7rem;
+    background:url(../images/story/title_appreciate.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 -6%;
+    bottom: 0;
+    left: 0;
+}.body .body-footer-foot .body .right p{
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height: .7rem;
+    background:url(../images/story/title_appreciate.png) no-repeat;
+    background-size: 100%;
+    background-position:  0 64%;
+    bottom: 0;
+    left: 0;
+}
+.body .body-footer-foot .body img{
+    width: 100%;
+}
+.body .body-footer-foot .foot{
+    margin-top: .197368rem;
+    width: 100%;
+    position: relative;
+}
+.body .body-footer-foot .foot video {
+    width: 100%;
+}
+.body .body-footer-foot .foot .movr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(17,20,26,.4);
+    top:0px;
+}
+.body .body-footer-foot .foot p {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: .7rem;
+    background:url(../images/story/title_appreciate_video_p.png) no-repeat;
+    background-size:100%;
+    bottom: 0;
+    left: 0;
+}
+
+.body .body-footer-foot .foot img{
+    width: 100%;
+}
+.body .body-footer-foot .foot .sos{
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    width: 1.052632rem;
+    height:1.052632rem;
+    background: url(https://game.gtimg.cn/images/yxzj/act/a20160510story/201808/icon_play.png);
+    background-size:cover;
+}
+.body .body-footer-foot .end{
+    margin-top: .197368rem;
+    justify-content: space-between;
+}
+.body .body-footer-foot .end div{
+    position: relative;
+    width: 48%;
+}
+.body .body-footer-foot .end .movr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(17,20,26,.4);
+    top:0px;
+}
+.body .body-footer-foot .end .lfet p{
+    z-index:999;
+    position: absolute;
+    width: 100%;
+    height: .7rem;
+    background:url(../images/story/title_appreciate.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 32%;
+    bottom: 0;
+    left: 0;
+}
+.body .body-footer-foot .end .right p{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: .7rem;
+    background:url(../images/story/title_appreciate.png) no-repeat;
+    background-size:100%;
+    background-position:  0 102%;
+    bottom: 0;
+    left: 0;
+}
+.body .body-footer-foot .end img{
+    width: 100%;
+}
+.body .body-footer-foot .footer{
+    margin-top: .263158rem;
+}
+.body .body-footer-foot .footer h5{
+    font-size: .24rem;
+    padding: .131579rem 0;
+    width: 1.97rem;
+    margin: .263158rem auto;
+    color: #669fdd;
+    text-align: center;
+    background:url(../images/story/home/warry.png) no-repeat;
+    background-size: 100%;
+}
+.body .body-footer-end{
+    margin-bottom: 2.631579rem;
+}
+.body .body-footer-end .top {
+    width: 2.28rem;
+    height: .6rem;
+    background: url(../images/story/index9.png) no-repeat;
+    background-size: 2.28rem auto;
+    margin: .657895rem auto;
+    margin-top: 1.052632rem;
+    background-position: 0 -1.2rem;
+}
+.body .body-footer-end .foot{
+    margin-top: .197368rem;
+    width: 100%;
+    height: 2.85rem;
+    position: relative;
+}
+.body .body-footer-end  img{
+    width: 100%;
+}
+.tab{
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+  z-index: 999;
+}
+.tab ul{
+    width: 100%;
+    background: #1e3b5d;
+}
+.tab ul li{
+    width: 20%;
+    height: 1.07rem;
+    text-align: center;
+    color:#a0c5f6;
+    font-size: .24rem;
+    font-weight: 700;
+    line-height: 1.07rem;
+}
+.ative{
+    background: url(../images/story/index-p-navOn.png) 50% no-repeat;
+    background-size:cover ; 
+}
+.land{
+    width: 100%;
+    height: 100%;
+    padding: .2rem .2rem ;
+    box-sizing: border-box;
+}
+.land img{
+    width: 100%;
+}
+.hore  .top-father{
+    width: 100%;
+    position: fixed;
+    height: .789474rem;
+    top: 0;
+    z-index: 999;
+}
+.hore .top {
+    width: 100%;
+    position:sticky ;
+    top: 0;
+    background-color: #253957;
+    align-items: center;
+}
+.hore .top .list {
+    width: 80%;
+    color: #4f6f95;
+    overflow-x: auto;
+}
+.hore .top .list ul{    
+    width: 130%;
+}
+.hore .top .list ul li{
+    padding: 0  .328947rem;
+    color: #a0c5f6;
+    text-align: center;
+    line-height: .789474rem;
+    box-sizing: border-box;
+}
+
+.hore .top select{ 
+    border: 1px solid #32507f;
+    background:#253957;
+    color: #a0c5f6;
+    text-align: center;
+    font-size: .157895rem;
+    outline: none;
+}
+.hore .body {
+    margin-top: .657895rem;
+}
+.hore .body ul{
+    flex-wrap: wrap;
+    margin-bottom: 1.184211rem;
+}
+.hore .body ul li{
+    padding-top:  .197368rem;
+    width: 45%;
+    margin: 0 .157895rem;
+    position: relative;
+    /* animation: jianru 0.6s; */
+}
+.hore .body ul li img{
+    width: 100%;
+}
+.appreciate .box {
+   width: 100%;
+   padding:.394737rem .131579rem;
+   box-sizing: border-box;
+}
+.appreciate .box ul li{
+    /* height: 3.152rem; */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    height:1rem;
+    margin: .131579rem 0;
+}
+.appreciate .box ul li img{
+     position: absolute;
+     top: -100%;
+     width: 100%;
+}
+.appreciate .box ul li div{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(right,rgba(20,34,47,.3),#33588b);
+}
+.appreciate .box ul li p{
+    height: .657895rem;
+    width: 1.973684rem;
+    /* background: url(../images/story/appreciate/appreciate-1-text1.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 87%; */
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 1;
+}
+.appreciate .box ul li p:nth-child(3){
+    display: none;
+}
+.appreciate .box ul li p:nth-child(2) img{
+    width: 100%;
+    top: 0;
+}
+.appreciate .box .app p:nth-child(3){
+    display: block;
+    width: 2.17rem;
+    height: .58rem;
+    background: url(../images/story/appreciate/warry.png) no-repeat;
+    background-size: 100%;
+    top: 60%;
+    left:12%;
+}
+.appreciate .box .app p:nth-child(2){
+    display: none;
+}
+.appreciate .box .app{
+    height: 3.152rem;
+    
+}
+.appreciate .box  .app div{
+    background: url(../images/story/appreciate/appreciate-1-text.png) no-repeat;
+    background-size: 40%;
+    background-position: 15% 30%;
+}
+.appreciate .box .app img{
+    top: 0;
+}
+
+@keyframes jianru {
+    0%{
+    top: 100%;
+    left: 100%;
+    opacity: 0;
+    transform:scale(0);
+    }
+    100%{
+        top:0;
+        left: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes appreciate {
+    0%{
+    left: 100%;
+    opacity: 1;
+    transform:scale(0);
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes appreciateAdd {
+    0%{
+    height: 1rem;
+    opacity: 1;
+    transform:scale(1);
+    }
+    100%{
+        height: 3.152rem;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes jianbian {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.index,
+.land,
+.hore,
+.appreciate {
+    animation: jianbian 1.2s;
+}

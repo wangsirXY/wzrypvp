@@ -1,3 +1,7 @@
+html * {
+  margin: 0;
+  padding: 0;
+}
 body {
   width: 100%;
   min-width: 320px;
@@ -11,7 +15,21 @@ ol,
 li {
   list-style: none;
 }
+input,
+button {
+  outline: none;
+}
 a {
   color: #333;
   text-decoration: none;
+}
+a.active {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+em,
+i {
+  font-style: normal;
 }
